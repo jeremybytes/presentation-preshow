@@ -94,7 +94,7 @@ Note that the application also has a launchSettings.json file where you can put 
 
 ## Potential Features
 
-* Configuration file instead of or in addition to command-line paramaters.
+* Configuration file instead of or in addition to command-line parameters.
 * UI / right-click menu
   * Change the delay interval
   * Pause the auto-advance
