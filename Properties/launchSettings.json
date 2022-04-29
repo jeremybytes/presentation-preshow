@@ -2,7 +2,7 @@
   "profiles": {
     "preshow": {
       "commandName": "Project",
-      "commandLineArgs": "-s 05:00 -t \"C:\\Development\\Sessions\\SDD2022\\TITLE-a-tour-of-go-for-the-csharp-dev.png\""
+      "commandLineArgs": "-s 19:30 -t \"C:\\Development\\Sessions\\SDD2022\\TITLE-a-tour-of-go-for-the-csharp-dev.png\""
     }
   }
 }

@@ -92,5 +92,13 @@ Note that the application also has a launchSettings.json file where you can put 
 
  The entire file can be removed, if desired.
 
-## Additional Notes
-If you find this useful or have ideas for additional features, please let me know.
+## Potential Features
+
+* Configuration file instead of or in addition to command-line paramaters.
+* UI / right-click menu
+  * Change the delay interval
+  * Pause the auto-advance
+  * "Next" and "Previous"
+* Windowed mode
+
+If you find this application useful or have ideas for additional features, please let me know.
