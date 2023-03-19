@@ -10,6 +10,9 @@ I decided to take this a step further. Instead of just cycling through pictures,
 I use command-line parameters for configuration so that I can create shortcuts in advance that include the parameters for a particular presentation. This is particularly useful if I have multiple presentations on one day; I can create a separate shortcut for each presentation.
 
 ## Features
+**Version 0.3.0**  
+* New parameter "-u" to provide a URL to display at the bottom of the screen  
+
 **Version 0.2.0**  
 * Application defaults to full-screen
 * Command-line parameter for image folder location
@@ -40,6 +43,7 @@ Command-line options:
     -d --delay   Number of seconds between slides (default: 10)
     -s --start   Start time for the presentation
     -t --title   Presentation title slide image location
+    -u --url     URL to display at the bottom of the screen
 ```
 
 Example shortcut target command-line with parameters:

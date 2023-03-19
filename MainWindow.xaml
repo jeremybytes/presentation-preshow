@@ -15,12 +15,16 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
         <Image Name="targetImage" Stretch="Uniform" 
                Grid.ColumnSpan="2"/>
-        <TextBlock Name="countDown" Grid.Row="1" Grid.Column="1"
+        <TextBlock Name="urlDisplay" Grid.Row="1" Grid.Column="0"
+                   Foreground="White" FontSize="30"
+                   Margin="10, 5"/>
+        <TextBlock Name="countDown" Grid.Row="1" Grid.Column="2"
                    Foreground="White" FontSize="42"
                    Margin="10, 5"/>
     </Grid>

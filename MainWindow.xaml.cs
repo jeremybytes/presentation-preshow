@@ -12,7 +12,7 @@ public partial class MainWindow : Window
     private readonly DispatcherTimer timer;
     private readonly DispatcherTimer countdownTimer;
 
-    public MainWindow(string imageFolder, int delay, DateTime startTime, string titleScreen)
+    public MainWindow(string imageFolder, int delay, DateTime startTime, string titleScreen, string url)
     {
         InitializeComponent();
 
@@ -28,8 +28,10 @@ public partial class MainWindow : Window
                 countDown.Visibility = Visibility.Collapsed;
                 countdownTimer.Stop();
             }
-            countDown.Text = $"Time to Start: {startTime - DateTime.Now:mm\\:ss}";
+            countDown.Text = $"Time to Start: {startTime - DateTime.Now:hh\\:mm\\:ss}";
         };
+
+        urlDisplay.Text = url;
 
         Loaded += (s, e) =>
         {

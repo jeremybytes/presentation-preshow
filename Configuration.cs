@@ -24,4 +24,8 @@ public class Configuration
         Default = "")]
     public string? TitleScreen { get; set; }
 
+    [Option(shortName: 'u', longName: "url", Required = false,
+        HelpText = "URL to overlay",
+        Default = "")]
+    public string? URL { get; set; }
 }

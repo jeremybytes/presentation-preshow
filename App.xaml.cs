@@ -14,6 +14,7 @@ namespace preshow
             string? startTimeString = "00:00";
             DateTime startTime = DateTime.Now;
             string? titleScreen = "";
+            string? url = "";
 
             CommandLine.Parser.Default.ParseArguments<Configuration>(e.Args)
                 .WithParsed(c =>
@@ -22,6 +23,7 @@ namespace preshow
                     delay = c.Delay;
                     startTimeString = c.StartTimeString;
                     titleScreen = c.TitleScreen;
+                    url = c.URL;
                 }).WithNotParsed(c =>
                 {
                     Environment.Exit(0);
@@ -33,7 +35,7 @@ namespace preshow
                     startTime = DateTime.Today + time.TimeOfDay;
                 }
 
-            System.Windows.Application.Current.MainWindow = new MainWindow(imageFolder, delay, startTime, titleScreen);
+            System.Windows.Application.Current.MainWindow = new MainWindow(imageFolder, delay, startTime, titleScreen, url);
             System.Windows.Application.Current.MainWindow.Show();
         }
     }
