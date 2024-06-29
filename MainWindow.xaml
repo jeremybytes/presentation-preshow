@@ -20,7 +20,7 @@
             <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
         <Image Name="targetImage" Stretch="Uniform" 
-               Grid.ColumnSpan="2"/>
+               Grid.ColumnSpan="3"/>
         <TextBlock Name="urlDisplay" Grid.Row="1" Grid.Column="0"
                    Foreground="White" FontSize="30"
                    Margin="10, 5"/>
