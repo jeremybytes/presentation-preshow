@@ -7,7 +7,7 @@ namespace preshow;
 
 public partial class MainWindow : Window
 {
-    private List<string> images = new();
+    private List<string> images = [];
     private int currentIndex = 0;
     private readonly DispatcherTimer timer;
     private readonly DispatcherTimer countdownTimer;
@@ -59,7 +59,7 @@ public partial class MainWindow : Window
             }
             ShowImage(0);
 
-            timer.Interval = new System.TimeSpan(0, 0, delay);
+            timer.Interval = new TimeSpan(0, 0, delay);
             timer.Start();
             countdownTimer.Start();
         };

@@ -6,20 +6,12 @@ public static class ImageLocator
 {
     public static List<string> GetImagesFromLocation(string folder)
     {
-        var images = new List<string>();
         var files = Directory.EnumerateFiles(folder, "*.*");
-        foreach (var file in files)
-        {
-            if (IsImage(file))
-            {
-                images.Add(file);
-            }
-        }
-        return images;
+        return files.Where(IsImage).ToList();
     }
 
     public static readonly List<string> ImageExtensions =
-        new() { ".JPG", ".JPEG", ".BMP", ".GIF", ".PNG" };
+        [ ".JPG", ".JPEG", ".BMP", ".GIF", ".PNG" ];
 
     private static bool IsImage(string file)
     {
