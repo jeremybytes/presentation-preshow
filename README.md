@@ -10,6 +10,10 @@ I decided to take this a step further. Instead of just cycling through pictures,
 I use command-line parameters for configuration so that I can create shortcuts in advance that include the parameters for a particular presentation. This is particularly useful if I have multiple presentations on one day; I can create a separate shortcut for each presentation.
 
 ## Features
+**Update**
+* Sample PowerShell script: [/PowerShell/sample.ps1](./PowerShell/sample.ps1)  
+This is a sample PowerShell script that fills in the command line parameters. When I use this, I put the script in my presentation folder and save a `TitleSlide.jpg` file with the title slide. The `preshowPath` value points to the output folder for this particular project.  
+
 **Version 0.3.0**  
 * New parameter "-u" to provide a URL to display at the bottom of the screen  
 
